@@ -1,6 +1,7 @@
 import { NavLink } from "react-router";
 import { Outlet } from "react-router";
 import React from "react";
+import reactLogo from "../assets/react.svg";
 import { useState } from "react";
 import viteLogo from "/vite.svg";
 
@@ -14,9 +15,9 @@ const SharedLayout = () => {
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        {/* <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
-        </a> */}
+        </a>
       </div>
       <h1>Vite + React</h1>
       <br />

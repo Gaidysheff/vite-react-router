@@ -1,11 +1,10 @@
 import { NavLink } from "react-router";
 import { Outlet } from "react-router";
 import React from "react";
-import reactLogo from "../assets/react.svg";
+import perfume from "../assets/Baccarat-Photoroom.png";
+import reactLogo from "/react.svg";
 import { useState } from "react";
 import viteLogo from "/vite.svg";
-
-// import reactLogo from "../assets/react.svg";
 
 const SharedLayout = () => {
   const [count, setCount] = useState(0);
@@ -14,6 +13,9 @@ const SharedLayout = () => {
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://vite.dev" target="_blank">
+          <img src={perfume} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />

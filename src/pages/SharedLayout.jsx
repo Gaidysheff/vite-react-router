@@ -1,9 +1,10 @@
 import { NavLink } from "react-router";
 import { Outlet } from "react-router";
 import React from "react";
-import reactLogo from "../assets/react.svg";
 import { useState } from "react";
 import viteLogo from "/vite.svg";
+
+// import reactLogo from "../assets/react.svg";
 
 const SharedLayout = () => {
   const [count, setCount] = useState(0);
@@ -13,14 +14,15 @@ const SharedLayout = () => {
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        {/* <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        </a> */}
       </div>
       <h1>Vite + React</h1>
       <br />
-      <NavLink to="/">Home</NavLink> | <NavLink to="/about">About</NavLink> |{" "}
-      <NavLink to="/contacts">Contacts</NavLink>
+      <NavLink to="/vite-react-router">Home</NavLink> |{" "}
+      <NavLink to="/vite-react-router/about">About</NavLink> |{" "}
+      <NavLink to="/vite-react-router/contacts">Contacts</NavLink>
       <Outlet />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>

@@ -10,7 +10,7 @@ const SharedLayout = () => {
   const [count, setCount] = useState(0);
   return (
     <>
-      <div>
+      <div className="flex flex-row justify-center text-3xl">
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -24,16 +24,13 @@ const SharedLayout = () => {
       <h1>Vite + React</h1>
       <br />
       <NavLink to="/vite-react-router">Home</NavLink> |{" "}
-      <NavLink to="/vite-react-router/about">About</NavLink> |{" "}
-      <NavLink to="/vite-react-router/contacts">Contacts</NavLink>
+      <NavLink to="/vite-react-router/about">LST</NavLink> |{" "}
+      <NavLink to="/vite-react-router/filter">Filter</NavLink>
       <Outlet />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more

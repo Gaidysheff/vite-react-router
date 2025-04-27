@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <>
-      <h1>I am About Page</h1>
+      <h1>Local Storage Test</h1>
 
       <input
         type="text"
